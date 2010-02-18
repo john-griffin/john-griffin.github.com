@@ -18,8 +18,13 @@ body.bp
 			text-align: center
 		#header
 			+column(!blueprint_grid_columns)
-			div.title
+			div
 				font-size: 3em
+			div.title
+				+column(12)
+			div.name
+				text-align: right
+				+column(12, true)
 		#content
 			+column(!blueprint_grid_columns)
 			div.info
@@ -81,7 +86,3 @@ body.bp
 							width: 100px
 							height: 100px
 							border: 0px none
-
-
-form.bp
-	+blueprint-form
